@@ -3,31 +3,31 @@ package org.example.mrasilbektelegrambot;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-
-import org.bytedeco.hdf5.H5Location;
-import org.bytedeco.javacpp.Pointer;
-import org.deeplearning4j.datasets.iterator.impl.ListDataSetIterator;
-import org.deeplearning4j.nn.conf.MultiLayerConfiguration;
-import org.deeplearning4j.nn.conf.NeuralNetConfiguration;
-import org.deeplearning4j.nn.conf.layers.DenseLayer;
-import org.deeplearning4j.nn.conf.layers.OutputLayer;
-import org.deeplearning4j.nn.multilayer.MultiLayerNetwork;
-import org.deeplearning4j.optimize.listeners.ScoreIterationListener;
+//
+//import org.bytedeco.hdf5.H5Location;
+//import org.bytedeco.javacpp.Pointer;
+//import org.deeplearning4j.datasets.iterator.impl.ListDataSetIterator;
+//import org.deeplearning4j.nn.conf.MultiLayerConfiguration;
+//import org.deeplearning4j.nn.conf.NeuralNetConfiguration;
+//import org.deeplearning4j.nn.conf.layers.DenseLayer;
+//import org.deeplearning4j.nn.conf.layers.OutputLayer;
+//import org.deeplearning4j.nn.multilayer.MultiLayerNetwork;
+//import org.deeplearning4j.optimize.listeners.ScoreIterationListener;
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.nd4j.linalg.activations.Activation;
-import org.nd4j.linalg.api.ndarray.INDArray;
-import org.nd4j.linalg.api.ops.impl.reduce.bool.All;
-import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
-import org.nd4j.linalg.factory.Nd4j;
-import org.nd4j.linalg.learning.config.Sgd;
-import org.nd4j.linalg.lossfunctions.LossFunctions;
+//import org.nd4j.linalg.activations.Activation;
+//import org.nd4j.linalg.api.ndarray.INDArray;
+//import org.nd4j.linalg.api.ops.impl.reduce.bool.All;
+//import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
+//import org.nd4j.linalg.factory.Nd4j;
+//import org.nd4j.linalg.learning.config.Sgd;
+//import org.nd4j.linalg.lossfunctions.LossFunctions;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.ParseMode;
 import org.telegram.telegrambots.meta.api.methods.send.SendDocument;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
-import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
+//import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
 import org.telegram.telegrambots.meta.api.methods.send.SendVideo;
 import org.telegram.telegrambots.meta.api.objects.*;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.InlineKeyboardMarkup;
@@ -37,36 +37,37 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKe
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import org.telegram.telegrambots.meta.generics.TelegramBot;
-import org.deeplearning4j.nn.conf.MultiLayerConfiguration;
-import org.deeplearning4j.nn.conf.NeuralNetConfiguration;
-import org.deeplearning4j.nn.conf.layers.DenseLayer;
-import org.deeplearning4j.nn.conf.layers.OutputLayer;
-import org.deeplearning4j.nn.multilayer.MultiLayerNetwork;
-import org.deeplearning4j.optimize.listeners.ScoreIterationListener;
-import org.nd4j.linalg.activations.Activation;
-import org.nd4j.linalg.dataset.DataSet;
-import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
-
-import org.nd4j.linalg.factory.Nd4j;
-import org.nd4j.linalg.lossfunctions.LossFunctions;
-import org.nd4j.linalg.api.ndarray.INDArray;
-
-import java.util.Collections;
+//import org.telegram.telegrambots.meta.generics.TelegramBot;
+//import org.deeplearning4j.nn.conf.MultiLayerConfiguration;
+//import org.deeplearning4j.nn.conf.NeuralNetConfiguration;
+//import org.deeplearning4j.nn.conf.layers.DenseLayer;
+//import org.deeplearning4j.nn.conf.layers.OutputLayer;
+//import org.deeplearning4j.nn.multilayer.MultiLayerNetwork;
+//import org.deeplearning4j.optimize.listeners.ScoreIterationListener;
+//import org.nd4j.linalg.activations.Activation;
+//import org.nd4j.linalg.dataset.DataSet;
+//import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
+//
+//import org.nd4j.linalg.factory.Nd4j;
+//import org.nd4j.linalg.lossfunctions.LossFunctions;
+//import org.nd4j.linalg.api.ndarray.INDArray;
+//
+//import java.security.Key;
+//import java.util.Collections;
 import java.util.List;
-
-import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
-import org.telegram.telegrambots.meta.api.methods.send.SendDocument;
+//
+//import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+//import org.telegram.telegrambots.meta.api.methods.send.SendDocument;
 import org.telegram.telegrambots.meta.api.objects.InputFile;
-import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-
-import java.io.*;
-
-import java.io.File;
-import java.net.HttpURLConnection;
-import java.net.URL;
+//import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
+//
+//import java.io.*;
+//
+//import java.io.File;
+//import java.net.HttpURLConnection;
+//import java.net.URL;
 import java.util.*;
-import java.util.logging.Level;
+//import java.util.logging.Level;
 
 public class MyBot extends TelegramLongPollingBot {
 
@@ -238,7 +239,7 @@ public class MyBot extends TelegramLongPollingBot {
     private Map<Long, String> passwords = new HashMap<>();
     private Map<Long, String> userNumbers = new HashMap<>();
 
-    private Map<Long, String> loginInputMap = new HashMap<>();
+    private Map<Long, String> loginAndPasword = new HashMap<>();
 
 
 
@@ -267,10 +268,53 @@ public class MyBot extends TelegramLongPollingBot {
                 } catch (TelegramApiException e) {
                     e.printStackTrace();
                 }
-                stateMap.put(chatId, "number");
-            } else if (stateMap.getOrDefault(chatId, "").equals("number")) {
+                stateMap.put(chatId, "namee");
+            } else if (stateMap.getOrDefault(chatId, "").equals("namee")) {
                 String password = text;
                 passwords.put(chatId, password);
+                sendMessage.setChatId(chatId);
+                sendMessage.setText("Iltimos Ismingizni kiriting!");
+                String firstName = update.getMessage().getChat().getFirstName();
+                ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+                List<KeyboardRow> rowList = new ArrayList<>();
+                KeyboardRow row = new KeyboardRow();
+                KeyboardButton button = new KeyboardButton(firstName);
+                row.add(button);
+                rowList.add(row);
+                replyKeyboardMarkup.setKeyboard(rowList);
+                replyKeyboardMarkup.setResizeKeyboard(true);
+                sendMessage.setReplyMarkup(replyKeyboardMarkup);
+                try {
+                    execute(sendMessage);
+                } catch (TelegramApiException e) {
+                    e.printStackTrace();
+                }
+                stateMap.put(chatId, "Gender");
+            } else if (stateMap.getOrDefault(chatId, "").equals("Gender")) {
+                String ism = text;
+                firstNameMap.put(chatId, ism);
+                sendMessage.setChatId(chatId);
+                sendMessage.setText("Iltimos Jinsingizni tanlang!");
+                ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+                List<KeyboardRow> rowList = new ArrayList<>();
+                KeyboardRow row1 = new KeyboardRow();
+                row1.add(new KeyboardButton("Erkak"));
+                rowList.add(row1);
+                KeyboardRow row2 = new KeyboardRow();
+                row2.add(new KeyboardButton("Ayol"));
+                rowList.add(row2);
+                replyKeyboardMarkup.setKeyboard(rowList);
+                replyKeyboardMarkup.setResizeKeyboard(true);
+                sendMessage.setReplyMarkup(replyKeyboardMarkup);
+                try {
+                    execute(sendMessage);
+                } catch (TelegramApiException e) {
+                    e.printStackTrace();
+                }
+                stateMap.put(chatId, "number");
+            } else if (stateMap.getOrDefault(chatId, "").equals("number")) {
+                String gender = text;
+                genderMap.put(chatId, gender);
                 sendMessage.setChatId(chatId);
                 sendMessage.setText("Iltimos raqamingizni yuboring");
                 ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
@@ -289,20 +333,21 @@ public class MyBot extends TelegramLongPollingBot {
                     e.printStackTrace();
                 }
             } else if (stateMap.getOrDefault(chatId, "").equals("login")) {
-                String enteredLogin = text;
-                if (logins.containsValue(enteredLogin)) {
+                String kiritganLogin = text;
+                if (logins.containsValue(kiritganLogin)) {
                     sendMessage(chatId, "Login to'g'ri. Iltimos, parolingizni kiriting:");
                     stateMap.put(chatId, "password");
-                    userNumbers.put(chatId, enteredLogin);
+                    loginAndPasword.put(chatId, kiritganLogin);
                 } else {
                     sendMessage(chatId, "Kechirasiz, bunday login mavjud emas. Iltimos, qayta urinib ko'ring.");
+                    MainMainManuu(chatId);
                 }
             } else if (stateMap.getOrDefault(chatId, "").equals("password")) {
-                String enteredPassword = text;
+                String kiritganParol = text;
 
-                String savedLogin = userNumbers.get(chatId);
+                String savedLogin = loginAndPasword.get(chatId);
 
-                if (logins.containsValue(savedLogin) && passwords.containsValue(enteredPassword)) {
+                if (logins.containsValue(savedLogin) && passwords.containsValue(kiritganParol)) {
                     sendMessage(chatId, "Yaxshi hammasi to'g'ri keldi! \n\n /start bosing!");
                     stateMap.put(chatId, "Salomlarim");
                 } else {
@@ -471,7 +516,36 @@ public class MyBot extends TelegramLongPollingBot {
             } catch (TelegramApiException e) {
                 e.printStackTrace();
             }
-        } else if (text.equals("\uD83D\uDCF1 Samsung!")) {
+        } /*else if (text.equals("Video Download🔻")) {
+            // Foydalanuvchidan video URL-sini so'rash
+            SendMessage requestMessage = new SendMessage();
+            requestMessage.setChatId(chatId);
+            requestMessage.setText("Iltimos, video URL-sini kiriting:");
+            execute(requestMessage);
+
+            // Keyingi bosqichda foydalanuvchining javobini kutish
+            // bu yerda 'update' dan URL olish
+            // Misol uchun:
+            String videoUrl = update.getMessage().getText();
+
+            // Videoni yuklab olish jarayoni
+            try {
+                // Video URL ni tekshirib, yuklab olish
+                downloadVideo(videoUrl);
+                SendMessage successMessage = new SendMessage();
+                successMessage.setChatId(chatId);
+                successMessage.setText("Video muvaffaqiyatli yuklandi!");
+                execute(successMessage);
+            } catch (IOException e) {
+                // Xatolik bo'lsa xabar yuborish
+                SendMessage errorMessage = new SendMessage();
+                errorMessage.setChatId(chatId);
+                errorMessage.setText("Xatolik yuz berdi: " + e.getMessage());
+                execute(errorMessage);
+            } catch (TelegramApiException e) {
+                e.printStackTrace();
+            }
+        }*/ else if (text.equals("\uD83D\uDCF1 Samsung!")) {
             try {
                 execute(myBotService.SamSung(chatId));
             } catch (TelegramApiException e) {
@@ -1345,6 +1419,13 @@ public class MyBot extends TelegramLongPollingBot {
                 e.printStackTrace();
             }
         } else if (text.equals("🌤️ Ob-havo ma'lumotlari")) {
+            sendMessage.setChatId(chatId);
+            sendMessage.setText("Iltimos biroz kuting! Tahminiy kutish vaqti 10 sekunt");
+            try {
+                execute(sendMessage);
+            } catch (TelegramApiException e) {
+                e.printStackTrace();
+            }
             StringBuilder weatherBuilder = new StringBuilder("🌤️ O'zbekiston ob-havo ma'lumotlari:\n\n");
             for (String city : CITIES) {
                 String weatherInfo = fetchWeather(city);
