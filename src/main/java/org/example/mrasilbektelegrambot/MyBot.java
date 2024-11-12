@@ -2442,11 +2442,11 @@ public class MyBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return "pdp_bot_testBot";
+        return "MrAsilbekChannelBot";
     }
 
     @Override
     public String getBotToken() {
-        return "7571817337:AAE6Ii6Pj7N8m7IVYp6b3aGmOB3eARB56Xw";
+        return "7637915691:AAHYsc-krBGaqb6PAVu2OJllu-kwM4x47Bk";
     }
 }
