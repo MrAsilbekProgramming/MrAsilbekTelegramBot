@@ -1,1 +1,1 @@
-worker: java -jar target/TelegramBot-1.0-SNAPSHOT.jar
+worker: java -Dserver.port=$PORT -jar target/MrAsilbekTelegramBot-0.0.1-SNAPSHOT.jar
